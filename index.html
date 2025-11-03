@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melting Pot in Uruguay: Tourism and Sports</title>
+
+    <!-- Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffffff, #b8e3ff, #ffeb7a);
+            color: #111;
+        }
+
+        .landing {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .landing h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            animation: slideUp 1.5s ease-in-out;
+        }
+
+        .landing p {
+            font-size: 1rem;
+            max-width: 700px;
+            margin-bottom: 25px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .enter-btn {
+            background-color: #0038a8;
+            color: white;
+            padding: 12px 26px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+            animation: slideUp 2s ease-in-out;
+        }
+
+        .enter-btn:hover {
+            background-color: #012c82;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(15px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #0038a8;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .img-box {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .img-box img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 10px;
+            background-color: rgba(0,0,0,0.1);
+            margin-top: 35px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="landing">
+        <h1>Melting Pot in Uruguay: Tourism and Sports</h1>
+        <p>
+            This website is part of a school project for the subject of English at <b>SAFA Arte y Ciencias</b>. <br>
+            Our class was divided into groups, and our group was assigned the topic <b>“Tourism and Sports in Uruguay.”</b> <br>
+            The purpose of this project is to show how foreign cultural influences helped shape these aspects of Uruguay.
+        </p>
+        <p><b>Created by:</b> Martín Nuñez, Camilo Rodrigues and Franco Stivan.</p>
+        <button class="enter-btn" onclick="document.getElementById('article').scrollIntoView({behavior: 'smooth'})">Go to Article</button>
+    </div>
+
+    <section id="article">
+        <h2>🏖 Tourism</h2>
+        <p>
+            Uruguayan tourism has been strongly influenced by Europe and neighboring countries.
+            Many buildings in Montevideo and Colonia del Sacramento have Spanish, Italian and Portuguese styles.
+            This European architecture makes the cities attractive to visitors from around the world.
+        </p>
+
+        <div class="img-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Colonia_del_Sacramento_-_Calle_de_los_Suspiros.jpg" alt="Colonia del Sacramento">
+        </div>
+
+        <h2>⚽ Sports</h2>
+        <p>
+            Football (soccer) was brought to Uruguay by English immigrants and sailors in the late 19th century.
+            Today, it is the most popular sport in the country and part of the national identity.
+        </p>
+
+        <p>
+            Rugby and tennis were also introduced by the British community. Thanks to these international influences, sports clubs and stadiums like Estadio Centenario were created.
+        </p>
+
+        <div class="img-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Estadio_Centenario_Montevideo.jpg/1200px-Estadio_Centenario_Montevideo.jpg" alt="Estadio Centenario">
+        </div>
+
+        <h2>🌍 Conclusion</h2>
+        <p>
+            The mix of European, British and neighboring influences helped shape tourism and sports in Uruguay.
+            These foreign roots are an important part of what makes the culture unique.
+        </p>
+
+        <h2>🎬 Video</h2>
+        <div style="margin-top: 15px; display: flex; justify-content: center;">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/uWBYoNc8xes"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 - School Project | SAFA Arte y Ciencias
+    </footer>
+
+</body>
+</html>
